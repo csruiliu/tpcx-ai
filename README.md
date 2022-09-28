@@ -14,7 +14,9 @@ A supplement repo for TPCx-AI benchmark (v1.0.2)
 
 ## Install Pythen Virtual Environment
 
-According to `setup-python.sh`, we need to conduct two virtual envrionment in `lib` folder with names `python-venv` and `python-venv-ks`. Furthermore, we need to install necessary depencies to these two venv using `requirements.txt` and `requirements-ks.txt`. These two requirements are based on the `python.yaml` and `python-ks.yaml` in the folder `tpcx-ai/tools/python`. 
+According to `setup-python.sh`, we have to conduct two virtual envrionment in `lib` folder with names `python-venv` and `python-venv-ks`. Furthermore, we need to install necessary depencies to these two venv using `requirements.txt` and `requirements-ks.txt`. These two requirements are based on the `python.yaml` and `python-ks.yaml` in the folder `tpcx-ai/tools/python`. 
+
+**However, if we only need to generate data using single node, we can just create `python-venv` and install the dependencies using `pip3 install -r requirements.txt`. Also, we need to install workload and driver by running `pip3 install -e workload/python` and `pip3 install -e driver`.**
 
 ## Generate Dataset
 

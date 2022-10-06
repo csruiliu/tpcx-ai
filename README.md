@@ -18,6 +18,10 @@ According to `setup-python.sh`, we have to conduct two virtual envrionment in `l
 
 **However, if we only need to generate data using single node, we can just create `python-venv` and install the dependencies using `pip3 install -r requirements.txt`. Also, we need to install workload and driver by running `pip3 install -e workload/python` and `pip3 install -e driver`.**
 
+**`python-vevn-ks` will be used in phase loading, training, etc**
+
+If we got RuntimeError `CMake must be installed to build the following extensions: dlib`, we need to install `cmake` in the virtual environment by `pip3 install cmake`.
+
 ## Generate Dataset
 
 After installing the python virtual environment and the associate depencies, we could run `TPCx-AI_Datagen.sh` to generate the dataset which should be located in the folder `output`.

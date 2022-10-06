@@ -51,6 +51,6 @@ bash ${TPCxAI_ENV_TOOLS_DIR}/clock_check.sh start
 ./bin/tpcxai.sh --phase {CLEAN,DATA_GENERATION} -sf ${TPCxAI_SCALE_FACTOR} -c ${TPCxAI_CONFIG_FILE_PATH}
 #./bin/tpcxai.sh --phase CLEAN -sf ${TPCxAI_SCALE_FACTOR} -c ${TPCxAI_CONFIG_FILE_PATH}
 
-BENCHMARK_RUN_EXIT_CODE=$?
+# BENCHMARK_RUN_EXIT_CODE=$?
 
-bash ${TPCxAI_ENV_TOOLS_DIR}/clock_check.sh end
+# bash ${TPCxAI_ENV_TOOLS_DIR}/clock_check.sh end
